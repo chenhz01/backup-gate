@@ -1,0 +1,15 @@
+name: backup-gate
+description: A backup you have never verified is a rumor.
+branding:
+  icon: shield
+  color: blue
+inputs:
+  args:
+    description: Arguments passed to gate.py
+    required: false
+    default: "--help"
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: python "${{ github.action_path }}/gate.py" ${{ inputs.args }}
