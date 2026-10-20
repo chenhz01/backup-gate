@@ -1,0 +1,18 @@
+{
+ "tool": "backup-gate",
+ "generated_at": "2026-10-20T06:40:57Z",
+ "root": "data",
+ "files": [
+  {
+   "path": "ledger.csv",
+   "size": 29,
+   "sha256": "31b0cdd3db6ebbcc38b835c03a33d7fa5d274105b855047ad79cd85a950bb119"
+  },
+  {
+   "path": "notes.md",
+   "size": 8,
+   "sha256": "0a28fc250c09e1f28c9f37486fca6db3c7a4ee707373216f6f7bd62ade5d9330"
+  }
+ ],
+ "_note": "deliberately stale fixture: one digest no longer matches the file, so the bundled example reports a real mismatch. Regenerate with _facade/fix_fixtures.py"
+}

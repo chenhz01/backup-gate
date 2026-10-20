@@ -19,8 +19,7 @@
 One command, on a file you already have:
 
 ```bash
-python gate.py manifest examples/data && \
-  python gate.py verify examples/data
+python gate.py verify examples/data
 ```
 
 <details>
@@ -29,7 +28,7 @@ python gate.py manifest examples/data && \
 ```text
 backup-gate report
 ================================
-ERROR  ledger.csv                   size-mismatch      size 29 != manifest 22
+ERROR  notes.md                     hash-mismatch      sha256 differs from manifest
 summary: declared=2 on_disk=2 missing=0 extra=0 mismatch=1 errors=1 warnings=0
 verdict: FAIL: 1 integrity error(s)
 ```
