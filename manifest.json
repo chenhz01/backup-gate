@@ -1,12 +1,12 @@
 {
  "tool": "backup-gate",
- "generated_at": "2026-10-20T06:40:57Z",
+ "generated_at": "2026-10-20T06:54:30Z",
  "root": "data",
  "files": [
   {
    "path": "ledger.csv",
-   "size": 29,
-   "sha256": "31b0cdd3db6ebbcc38b835c03a33d7fa5d274105b855047ad79cd85a950bb119"
+   "size": 28,
+   "sha256": "4e8d86daf65083f47bf9e522205443cbd726c37d1027ac8ec20200a241df7af7"
   },
   {
    "path": "notes.md",
