@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2026 chenhz01 — see LICENSE, LICENSE-SPEC and NOTICE
 """backup-gate — prove a backup directory is intact and fresh.
 
 Pure standard library. Mechanism is deliberately inverted from backup tools:
