@@ -71,7 +71,26 @@ Python 3.9+. Nothing to `pip install` — stdlib only.
   run: python gate.py verify examples/data
 ```
 
-`action.yml` is included, so you can also reference the repo directly as a composite action.
+## Use it as a GitHub Action
+
+`action.yml` is included, so you can call this repo directly as a composite action.
+
+```yaml
+# .github/workflows/gates.yml
+- uses: actions/checkout@v4
+
+- uses: chenhz01/backup-gate@v0.1.0
+  with:
+    # IMPORTANT: this path is inside YOUR repository.
+    # The examples/ in this repo are NOT in your workspace — pass your own files.
+    args: "verify path/to/data"
+```
+
+Pin the tag (`@v0.1.0`) rather than `@main` — `main` moves.
+
+If you omit `args`, the action only prints help and exits 0. It raises a warning
+annotation so a green check is never mistaken for "it inspected my files".
+
 
 ## 中文速览
 
